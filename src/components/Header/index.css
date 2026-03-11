@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  padding: 0 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.header-logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4d8af0;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header-logo:hover {
+  color: #3a77e0;
+}
+
+.header-divider {
+  width: 1px;
+  height: 20px;
+  background-color: #d1d5db;
+  margin: 0 16px;
+}
+
+.header-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #555555;
+}
+
+.header-user svg {
+  font-size: 16px;
+  color: #888888;
+}
+
+.header-logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  color: #888888;
+  font-size: 18px;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.header-logout-btn:hover {
+  background-color: #f3f4f6;
+  color: #333333;
+}

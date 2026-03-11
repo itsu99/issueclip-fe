@@ -1,0 +1,153 @@
+/* ===== BoardList ===== */
+.bl-page {
+  background-color: #f0f2f5;
+  min-height: calc(100vh - 52px);
+}
+
+.bl-main {
+  padding: 32px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bl-toolbar {
+  margin-bottom: 24px;
+}
+
+.bl-create-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #4d8af0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.bl-create-btn:hover {
+  background-color: #3a77e0;
+}
+
+.bl-create-btn-icon {
+  font-size: 18px;
+}
+
+/* Grid */
+.bl-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Board Card */
+.bl-card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition:
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.bl-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.bl-card-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  background-color: #f8f9fb;
+  color: #b0b8c8;
+}
+
+.bl-card-info {
+  padding: 12px 16px 14px;
+}
+
+.bl-card-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #222222;
+  margin: 0 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bl-card-date {
+  font-size: 12px;
+  color: #999999;
+  margin: 0;
+}
+
+/* Delete button */
+.bl-card-delete {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+  color: #888888;
+  cursor: pointer;
+  opacity: 0;
+  transition:
+    opacity 0.15s ease,
+    color 0.15s ease;
+}
+
+.bl-card:hover .bl-card-delete {
+  opacity: 1;
+}
+
+.bl-card-delete:hover {
+  color: #e53e3e;
+  background: #ffffff;
+}
+
+/* Empty state */
+.bl-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  color: #aaaaaa;
+  gap: 8px;
+}
+
+.bl-empty-icon {
+  color: #cccccc;
+}
+
+.bl-empty-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #888888;
+}
+
+.bl-empty-sub {
+  font-size: 14px;
+  margin: 0;
+  color: #aaaaaa;
+}

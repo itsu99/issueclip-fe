@@ -1,0 +1,110 @@
+.lp-page {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+.lp-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  padding: 40px 48px 36px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.lp-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: #4d8af0;
+  margin: 0 0 32px;
+}
+
+.lp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lp-label {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.lp-input {
+  background-color: #eef1f7;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: #333333;
+  outline: none;
+  transition:
+    background-color 0.15s ease,
+    box-shadow 0.15s ease;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+.lp-input:focus {
+  background-color: #e4e9f5;
+  box-shadow: 0 0 0 2px rgba(77, 138, 240, 0.3);
+}
+
+.lp-input::placeholder {
+  color: #aab0be;
+}
+
+.lp-btn {
+  margin-top: 4px;
+  background-color: #4d8af0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition:
+    background-color 0.15s ease,
+    transform 0.1s ease;
+  letter-spacing: 0.03em;
+}
+
+.lp-btn:hover {
+  background-color: #3a77e0;
+}
+.lp-btn:active {
+  background-color: #2f6acf;
+  transform: scale(0.99);
+}
+
+.lp-register {
+  text-align: center;
+  font-size: 13px;
+  color: #888888;
+  margin: 0;
+}
+
+.lp-register-link {
+  color: #4d8af0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.lp-register-link:hover {
+  text-decoration: underline;
+}

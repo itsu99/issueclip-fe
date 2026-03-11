@@ -1,0 +1,140 @@
+/* Overlay */
+.cbm-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal */
+.cbm-modal {
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Header */
+.cbm-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px 16px;
+}
+
+.cbm-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.cbm-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888888;
+  padding: 4px;
+  border-radius: 6px;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.cbm-close:hover {
+  background-color: #f3f4f6;
+  color: #333333;
+}
+
+/* Body */
+.cbm-body {
+  padding: 8px 24px 24px;
+}
+
+.cbm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cbm-label {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+}
+
+.cbm-input {
+  border: 1.5px solid #4d8af0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+  color: #333333;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  transition: box-shadow 0.15s ease;
+}
+
+.cbm-input:focus {
+  box-shadow: 0 0 0 3px rgba(77, 138, 240, 0.2);
+}
+
+.cbm-input::placeholder {
+  color: #aab0be;
+}
+
+/* Footer */
+.cbm-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 14px 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.cbm-btn-cancel {
+  background: none;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #555555;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.cbm-btn-cancel:hover {
+  background-color: #f3f4f6;
+}
+
+.cbm-btn-create {
+  background-color: #4d8af0;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.cbm-btn-create:hover {
+  background-color: #3a77e0;
+}
+
+.cbm-btn-create:disabled {
+  background-color: #9dbcf5;
+  cursor: not-allowed;
+}
