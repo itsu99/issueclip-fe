@@ -51,7 +51,6 @@
   color: #4d8af0;
 }
 
-/* List */
 .label-sidebar__list {
   list-style: none;
   padding: 0;
@@ -98,7 +97,6 @@
   color: #333333;
 }
 
-/* Delete button */
 .label-sidebar__delete-btn {
   display: flex;
   align-items: center;
@@ -120,42 +118,41 @@
   color: #e53e3e;
 }
 
-/* ===== NoteList Layout ===== */
-.note {
+/* ===== Board Layout ===== */
+.board {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-.note-main {
+.board-main {
   display: flex;
   flex: 1;
   overflow: hidden;
 }
 
-.note-content {
+.board-content {
   flex: 1;
   padding: 24px 32px;
   overflow-y: auto;
   background-color: #ffffff;
 }
 
-/* Header */
-.note-content__header {
+.board-content__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
 }
 
-.note-content__title {
+.board-content__title {
   font-size: 22px;
   font-weight: 700;
   color: #1a1a2e;
   margin: 0;
 }
 
-.note-content__add-btn {
+.board-content__add-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -170,25 +167,24 @@
   transition: background-color 0.15s ease;
 }
 
-.note-content__add-btn:hover {
+.board-content__add-btn:hover {
   background-color: #3a77e0;
 }
 
-/* Grid */
-.notes-grid {
+.board-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
 @media (max-width: 1100px) {
-  .notes-grid {
+  .board-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 800px) {
-  .notes-grid {
+  .board-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -236,7 +232,6 @@
   overflow: hidden;
 }
 
-/* Labels */
 .note-card__labels {
   display: flex;
   flex-wrap: wrap;
@@ -252,7 +247,6 @@
   border-radius: 20px;
 }
 
-/* Footer */
 .note-card__footer {
   display: flex;
   align-items: center;
@@ -320,7 +314,6 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
-/* Header */
 .note-modal__header {
   display: flex;
   align-items: center;
@@ -360,7 +353,6 @@
   color: #333333;
 }
 
-/* Body */
 .note-modal__body {
   padding: 8px 24px 24px;
   display: flex;
@@ -418,7 +410,6 @@
   color: #aab0be;
 }
 
-/* Labels */
 .note-modal__labels {
   display: flex;
   flex-wrap: wrap;
@@ -442,7 +433,6 @@
   transform: scale(1.03);
 }
 
-/* Footer */
 .note-modal__footer {
   display: flex;
   align-items: center;
@@ -455,6 +445,7 @@
   background-color: #ffffff;
 }
 
+/* ===== Buttons ===== */
 .btn-secondary {
   background: none;
   border: 1px solid #d1d5db;

@@ -1,5 +1,5 @@
 import { FiPlus, FiTag, FiX } from "react-icons/fi";
-import "./NoteList.css";
+import "./Board.css";
 import { useState } from "react";
 import LabelModal from "../../components/LabelModal";
 

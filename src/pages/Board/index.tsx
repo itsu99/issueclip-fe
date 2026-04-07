@@ -1,12 +1,12 @@
 import { FiPlus } from "react-icons/fi";
 import Header from "../../components/Header";
 import LabelSidebar from "./LabelSidebar";
-import "./NoteList.css";
+import "./Board.css";
 import NoteCard from "./NoteCard";
 import { useState } from "react";
 import NoteModal from "./NoteModal";
 
-export default function NoteList() {
+export default function Board() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const closeModalHandle = () => {
@@ -16,14 +16,14 @@ export default function NoteList() {
   return (
     <div className="note">
       <Header title="GP-Prod" />
-      <div className="note-main">
+      <div className="board-main">
         <LabelSidebar />
 
-        <main className="note-content">
-          <div className="note-content__header">
-            <h2 className="note-content__title">すべてのクリップ</h2>
+        <main className="board-content">
+          <div className="board-content__header">
+            <h2 className="board-content__title">すべてのクリップ</h2>
             <button
-              className="btn btn-primary note-content__add-btn"
+              className="btn btn-primary board-content__add-btn"
               onClick={() => {
                 setIsModalOpen(true);
               }}
@@ -32,7 +32,7 @@ export default function NoteList() {
               <span>新しいクリップ</span>
             </button>
           </div>
-          <div className="notes-grid">
+          <div className="board-grid">
             <NoteCard />
             <NoteCard />
             <NoteCard />

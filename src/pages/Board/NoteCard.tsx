@@ -1,5 +1,5 @@
 import { FiEdit2, FiTrash2 } from "react-icons/fi";
-import "./NoteList.css";
+import "./Board.css";
 
 export default function NoteCard() {
   return (

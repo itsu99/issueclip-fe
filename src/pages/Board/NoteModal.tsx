@@ -1,5 +1,5 @@
 import { FiX } from "react-icons/fi";
-import "./NoteList.css";
+import "./Board.css";
 
 interface NoteModalProps {
   onClose: () => void;

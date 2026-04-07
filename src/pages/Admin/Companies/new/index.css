@@ -1,0 +1,232 @@
+/* ===== Admin Page ===== */
+.admin-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.admin-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 32px 48px;
+}
+
+/* Tabs */
+.admin-tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 32px;
+}
+
+.admin-tab {
+  background: none;
+  border: none;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #888888;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+.admin-tab:hover {
+  color: #4d8af0;
+}
+
+.admin-tab.active {
+  color: #4d8af0;
+  border-bottom-color: #4d8af0;
+  font-weight: 600;
+}
+
+/* Section */
+.admin-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.admin-section__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.admin-section__controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-search {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 9px 14px;
+  font-size: 14px;
+  color: #333333;
+  outline: none;
+  width: 240px;
+  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+  background-color: #ffffff;
+}
+
+.admin-search:focus {
+  border-color: #4d8af0;
+  box-shadow: 0 0 0 3px rgba(77, 138, 240, 0.15);
+}
+
+.admin-search::placeholder {
+  color: #aab0be;
+}
+
+.admin-add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #4d8af0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+.admin-add-btn:hover {
+  background-color: #3a77e0;
+}
+
+/* Company Grid */
+.admin-company-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .admin-company-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Company Card */
+.admin-company-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition:
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.admin-company-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.admin-company-card__name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.admin-company-card__date {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.admin-company-card__actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Icon Buttons */
+.admin-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #aaaaaa;
+  padding: 6px;
+  border-radius: 6px;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.admin-icon-btn:hover {
+  background-color: #f0f2f5;
+  color: #4d8af0;
+}
+
+.admin-icon-btn--danger:hover {
+  background-color: #fff0f0;
+  color: #e53e3e;
+}
+
+/* User Table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+}
+
+.admin-table th {
+  text-align: left;
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #888888;
+  background-color: #f8f9fb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-table td {
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #333333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table tr:hover td {
+  background-color: #f8f9fb;
+}
+
+.admin-table__actions {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+}

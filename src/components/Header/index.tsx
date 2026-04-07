@@ -11,7 +11,7 @@ export default function Header({ title }: HeaderProps) {
     <header className="header">
       <div className="header-left">
         <Link to="/" className="header-logo">
-          Team Clip
+          issueclip
         </Link>
         <div className="header-divider" />
         <h1 className="header-title">{title}</h1>

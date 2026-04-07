@@ -4,7 +4,7 @@ export default function Login() {
   return (
     <div className="lp-page">
       <div className="lp-card">
-        <h1 className="lp-title">Team Clip</h1>
+        <h1 className="lp-title">issueclip</h1>
 
         <div className="lp-form">
           <div className="lp-field">
